@@ -1,0 +1,151 @@
+/* ===== RESET Y FUENTE GENERAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+/* ===== SIDEBAR LATERAL ===== */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    color: #ecf0f1;
+}
+
+/* ===== MENÚ PRINCIPAL ===== */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    background-color: #34495e;
+    transition: background-color 0.3s ease;
+}
+
+.menu > li > a:hover {
+    background-color: #1abc9c;
+}
+
+/* ===== SUBMENÚS ===== */
+.submenu,
+.subsubmenu {
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 0;
+    display: none;
+}
+
+.submenu,
+.subsubmenu {
+    display: none;
+}
+
+/* ===== ENLACES SUBMENÚ ===== */
+.submenu a,
+.subsubmenu a {
+    font-size: 0.9em;
+    padding: 8px 10px;
+    display: block;
+    color: #ecf0f1;
+    background-color: #3b5872;
+    border-radius: 4px;
+    margin: 2px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.subsubmenu a {
+    background-color: #46667f;
+    padding-left: 25px;
+}
+
+.submenu a:hover,
+.subsubmenu a:hover {
+    background-color: #16a085;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.main-content h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Animación suave de despliegue */
+.submenu,
+.subsubmenu {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Flechas */
+.arrow {
+    float: right;
+    transition: transform 0.3s ease;
+    color: #ccc;
+}
+
+.dropdown-btn:hover .arrow {
+    color: #fff;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+/* CREDITOS */
+
+/* cartera */
+.btn-cartera {
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cartera:hover {
+    background-color: #16a085;
+}
+
+
+

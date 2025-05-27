@@ -12,4 +12,17 @@ public class InicioController {
         model.addAttribute("mensaje", "Bienvenido a CACILSOFT 🚀");
         return "inicio"; // nombre del archivo HTML
     }
+    
+    @GetMapping("/creditos")
+    public String mostrarCreditos(Model model) {
+        model.addAttribute("titulo", "Módulo Créditos");
+        return "Creditos"; // archivo modulo1.html
+    }
+    
+    
+    @GetMapping("/creditos/estadisticos/cartera")
+    public String verCartera(Model model) {
+        model.addAttribute("titulo", "Cartera Estadística");
+        return "creditos/cartera";
+    }
 }
