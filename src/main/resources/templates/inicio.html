@@ -1,106 +1,134 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
 
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" th:href="@{/css/styles.css}">
+	<!-- Estilos personalizados -->
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
 
-    <!-- FontAwesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- FontAwesome para íconos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="sidebar">
-        <h2>CACILSOFT</h2>
-        <ul class="menu">
-            <li>
-                <a href="javascript:void(0);" class="dropdown-btn">
-                    Créditos <i class="fas fa-chevron-right arrow"></i>
-                </a>
-                <ul class="submenu">
-                    <li>
-                        <a href="javascript:void(0);" class="dropdown-btn">
-                            Estadisticos <i class="fas fa-chevron-right arrow"></i>
-                        </a>
-                        <ul class="subsubmenu">
-                            <li><a th:href="@{/creditos/estadisticos/cartera}">Cartera Creditos</a></li>
-                            <li><a th:href="@{/creditos/estadisticos/reporte2}">Reporte 2</a></li>
-                            <li><a th:href="@{/creditos/estadisticos/reporte3}">Reporte 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="dropdown-btn">
-                            Cobranza <i class="fas fa-chevron-right arrow"></i>
-                        </a>
-                        <ul class="subsubmenu">
-                            <li><a th:href="@{/creditos/cobranza/reporte1}">Reporte 1</a></li>
-                            <li><a th:href="@{/creditos/cobranza/reporte2}">Reporte 2</a></li>
-                            <li><a th:href="@{/creditos/cobranza/reporte3}">Reporte 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="dropdown-btn">
-                            Planillas <i class="fas fa-chevron-right arrow"></i>
-                        </a>
-                        <ul class="subsubmenu">
-                            <li><a th:href="@{/creditos/planillas/reporte1}">Reporte 1</a></li>
-                            <li><a th:href="@{/creditos/planillas/reporte2}">Reporte 2</a></li>
-                            <li><a th:href="@{/creditos/planillas/reporte3}">Reporte 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
+	<div class="sidebar">
+		<h2>CACILSOFT</h2>
+		<ul class="menu">
+			<li>
+				<a href="javascript:void(0);" class="dropdown-btn">
+					Créditos <i class="fas fa-chevron-right arrow"></i>
+				</a>
+				<ul class="submenu">
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Estadisticos <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/creditos/estadisticos/cartera}">Cartera Creditos</a></li>
+							<li><a th:href="@{/creditos/estadisticos/reporte2}">Reporte 2</a></li>
+							<li><a th:href="@{/creditos/estadisticos/reporte3}">Reporte 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Cobranza <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/creditos/cobranza/reporte1}">Reporte 1</a></li>
+							<li><a th:href="@{/creditos/cobranza/reporte2}">Reporte 2</a></li>
+							<li><a th:href="@{/creditos/cobranza/reporte3}">Reporte 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Planillas <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/creditos/planillas/reporte1}">Reporte 1</a></li>
+							<li><a th:href="@{/creditos/planillas/reporte2}">Reporte 2</a></li>
+							<li><a th:href="@{/creditos/planillas/reporte3}">Reporte 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="javascript:void(0);" class="dropdown-btn">
-                    Operaciones <i class="fas fa-chevron-right arrow"></i>
-                </a>
-                <ul class="submenu">
-                    <li><a th:href="@{/operaciones/consulta}">Consulta</a></li>
-                    <li><a th:href="@{/operaciones/movimientos}">Movimientos</a></li>
-                    <li><a th:href="@{/operaciones/ajustes}">Ajustes</a></li>
-                </ul>
-            </li>
+			<li>
+				<a href="javascript:void(0);" class="dropdown-btn">
+					Operaciones <i class="fas fa-chevron-right arrow"></i>
+				</a>
+				<ul class="submenu">
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Caja <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/operaciones/caja/seguro}">Seguro Desgravamen</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Reporteria <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/operaciones/cobranza/reporte1}">Reporte 1</a></li>
+							<li><a th:href="@{/operaciones/cobranza/reporte2}">Reporte 2</a></li>
+							<li><a th:href="@{/operaciones/cobranza/reporte3}">Reporte 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="dropdown-btn">
+							Planillas <i class="fas fa-chevron-right arrow"></i>
+						</a>
+						<ul class="subsubmenu">
+							<li><a th:href="@{/creditos/planillas/reporte1}">Reporte 1</a></li>
+							<li><a th:href="@{/creditos/planillas/reporte2}">Reporte 2</a></li>
+							<li><a th:href="@{/creditos/planillas/reporte3}">Reporte 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="javascript:void(0);" class="dropdown-btn">
-                    Contabilidad <i class="fas fa-chevron-right arrow"></i>
-                </a>
-                <ul class="submenu">
-                    <li><a th:href="@{/contabilidad/balance}">Balance</a></li>
-                    <li><a th:href="@{/contabilidad/resultados}">Resultados</a></li>
-                </ul>
-            </li>
+			<li>
+				<a href="javascript:void(0);" class="dropdown-btn">
+					Contabilidad <i class="fas fa-chevron-right arrow"></i>
+				</a>
+				<ul class="submenu">
+					<li><a th:href="@{/contabilidad/balance}">Balance</a></li>
+					<li><a th:href="@{/contabilidad/resultados}">Resultados</a></li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="javascript:void(0);" class="dropdown-btn">
-                    Riesgos <i class="fas fa-chevron-right arrow"></i>
-                </a>
-                <ul class="submenu">
-                    <li><a th:href="@{/riesgos/alertas}">Alertas</a></li>
-                    <li><a th:href="@{/riesgos/mapa}">Mapa de Riesgos</a></li>
-                </ul>
-            </li>
+			<li>
+				<a href="javascript:void(0);" class="dropdown-btn">
+					Riesgos <i class="fas fa-chevron-right arrow"></i>
+				</a>
+				<ul class="submenu">
+					<li><a th:href="@{/riesgos/alertas}">Alertas</a></li>
+					<li><a th:href="@{/riesgos/mapa}">Mapa de Riesgos</a></li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="javascript:void(0);" class="dropdown-btn">
-                    TI <i class="fas fa-chevron-right arrow"></i>
-                </a>
-                <ul class="submenu">
-                    <li><a th:href="@{/ti/usuarios}">Usuarios</a></li>
-                    <li><a th:href="@{/ti/soporte}">Soporte</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+			<li>
+				<a href="javascript:void(0);" class="dropdown-btn">
+					TI <i class="fas fa-chevron-right arrow"></i>
+				</a>
+				<ul class="submenu">
+					<li><a th:href="@{/ti/usuarios}">Usuarios</a></li>
+					<li><a th:href="@{/ti/soporte}">Soporte</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 
-    <div class="main-content">
-        <h1 th:text="${mensaje}">Bienvenido</h1>
-        <p>Selecciona un módulo del menú lateral izquierdo.</p>
-    </div>
+	<div class="main-content">
+		<h1 th:text="${mensaje}">Bienvenido</h1>
+		<p>Selecciona un módulo del menú lateral izquierdo.</p>
+	</div>
 
-    <!-- Script JS externo -->
-    <script th:src="@{/js/menu.js}"></script>
+	<!-- Script JS externo -->
+	<script th:src="@{/js/menu.js}"></script>
 </body>
+
 </html>
